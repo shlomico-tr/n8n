@@ -72,7 +72,7 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'n8ntestshlomi2'
+          app-name: 'n8ntestshlomi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BD81C31ED959457E853E6883A72959DB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_NEW }}
           images: '${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:azure-latest'
